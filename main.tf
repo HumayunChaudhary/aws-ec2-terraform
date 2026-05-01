@@ -34,9 +34,14 @@ resource "aws_key_pair" "test_laravel_app_key" {
   public_key = file("key_terraform-VM.pub")
 }
 
+variable "ami_id" {
+  description = "AMI ID for EC2 instance"
+  type        = string
+}
+
 resource "aws_instance" "test_laravel_app" {
   instance_type          = "t3.micro"
-  ami                    = "ami-067bcf851477ebb78"
+  ami                    = var.ami_id /*"ami-067bcf851477ebb78"*/
   key_name               = aws_key_pair.test_laravel_app_key.key_name
   vpc_security_group_ids = [aws_security_group.test_laravel_app_SG.id]
   root_block_device {
