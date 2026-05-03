@@ -8,7 +8,7 @@
 
 ---
 
-#### Step 1: Generate Public Key
+### Step 1: Generate Public Key
 This key is imported into the EC2 instance and would be used for SSH connection.
 If you only have a private key, generate the public key:
 
