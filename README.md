@@ -2,5 +2,5 @@
 
 ssh-keygen -y -f /path/to/private_key > public_key.pub
 
-### To test, run:
+#### To test, run:
 terraform plan -var-file=prod.tfvars 
