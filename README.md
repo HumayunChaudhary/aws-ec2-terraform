@@ -16,12 +16,12 @@ If you only have a private key, generate the public key:
 ## Step 2: Initialize Terraform
 Download the required plugins:
 
-terraform init
+`terraform init`
 
 ## Step 3: Plan Infrastructure
 Preview changes before applying:
 
-terraform plan -var-file=prod.tfvars
+`terraform plan -var-file=prod.tfvars`
 
 ## Step 4: Apply Infrastructure
 Provision resources:
