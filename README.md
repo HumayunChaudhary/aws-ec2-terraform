@@ -14,6 +14,8 @@ If you only have a private key, generate the public key:
 ssh-keygen -y -f /path/to/private_key > public_key.pub
 
 ## Step 2: Initialize Terraform
+Download the required plugins:
+
 terraform init
 
 ## Step 3: Plan Infrastructure
