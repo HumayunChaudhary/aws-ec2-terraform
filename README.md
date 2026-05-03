@@ -9,6 +9,7 @@
 ---
 
 ### Step 1: Generate Public Key
+This key would be imported into the EC2 instance and would be used for SSH connection.
 If you only have a private key, generate the public key:
 
 `ssh-keygen -y -f /path/to/private_key > public_key.pub`
